@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 
 RUN apt-get clean && apt-get update && apt-get upgrade -y 
-RUN apt-get install -y git sudo curl ctags netcat nmap
+
+
+RUN apt-get install -y git curl ctags netcat nmap wget
 
 # Install C and CPP things
 RUN apt-get install -y gdb valgrind gcc cmake clang
